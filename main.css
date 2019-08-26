@@ -1,5 +1,9 @@
 body {
 	margin: 0;
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	color: #767676;
+	line-height: 22px;
 }
 .header {
 	background-color: #dcdcdc;
@@ -10,22 +14,19 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	padding: 0 10px;
+	vertical-align: middle;
 }
 .logo {
-	/*margin: 86px 0;*/
 	height: 100px;
 	width: 273px;
-	position: relative;
-	top: 50%;
 }
 .header_contacts {
 	float: right;
-	text-align: right;
-	display: block;
 }
 .head_tel {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 40px;
+	line-height: 46px;
 	color: #767676;
 	text-decoration: none;
 }
@@ -34,6 +35,50 @@ body {
 	font-size: 24px;
 	font-weight: 700;
 	color: #767676;
-	border-bottom: 2px dashed;
 	text-decoration: none;
+	text-align: right;
+	
+}
+.header_contacts a {
+	display: block;
+}
+.feedback span {
+	border-bottom: 2px dashed #767676;
+	text-decoration: none;
+}
+
+/* Контейнер */
+.fc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu {
+	margin-top: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #777;
+	position: absolute;
+}
+.container {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.menu_bars li {
+	display: inline;
+}
+.menu_link {
+	list-style-type: none;
+}
+.ml {
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 400;
+	padding: 0 18px;
+}
+.meun_bars li::after {
+	content: "|";
+	color: #fff;
 }
