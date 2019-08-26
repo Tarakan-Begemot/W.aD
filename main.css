@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+}
+.header {
+	background-color: #dcdcdc;
+	height: 230px;
+}
+.container_header {
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 10px;
+}
+.logo {
+	/*margin: 86px 0;*/
+	height: 100px;
+	width: 273px;
+	position: relative;
+	top: 50%;
+}
+.header_contacts {
+	float: right;
+	text-align: right;
+	display: block;
+}
+.head_tel {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 40px;
+	color: #767676;
+	text-decoration: none;
+}
+.feedback {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #767676;
+	border-bottom: 2px dashed;
+	text-decoration: none;
+}
