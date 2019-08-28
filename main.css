@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	padding: 0;
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	color: #767676;
@@ -116,8 +117,10 @@ body {
 .slider {
 	animation: fslider 8s infinite ease;
 }
-
-
+/* .content {
+	display: block;
+	overflow: auto;
+} */
 .nav_top {
 	width: 1000px;
 	margin: 0 auto;
@@ -134,15 +137,16 @@ body {
 } 
 .middle {
 	width: 1000px;
+	height: 788px;
 	margin: 0 auto;
-	height: 768px;
-	/* display: inline-block; */
+	position: relative;
 }
 .nav_side {
-	width: 25%;
+	width: 20%;
 }
 .ul_side {
 	list-style: none;
+	padding: 0;
 	height: 350px;
 }
 .li_side {
@@ -175,16 +179,112 @@ body {
 	background-image: url("../img/excel.png");
   }
 .items {
+	width: 80%;
+	position: absolute;
+	top: 0;
+	right: 0;
 	display: flex;
-	width: 75%;
+	flex-wrap: wrap;
 
 }
 .item {
 	background-color: #dcdcdc;
 	margin: 7px;
+	height: 380px;
 	width: 250px;
-	flex-wrap: wrap;
+	position: relative;
 }
 .ii {
 	margin: 20px;
+}
+.item p {
+	margin: 0 20px;
+	font-size: 18px;	
+}
+.item span {
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+	margin: 20px 0 20px 15px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 30px;
+}
+.item a {
+	position: absolute;
+	margin: 20px 20px 20px 0;
+	bottom: 0;
+	right: 0;
+
+}
+.site_num {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.site_num a {
+	text-decoration: none;
+	color: #767676;
+}
+.site_num li {
+	font-size: 18px;
+	list-style: none;
+	display: inline;
+	margin: 20px 5px;
+}
+.site_num a:hover {
+	text-decoration: underline;
+	font-size: 20px;
+}
+.subs {
+	width: 1000px;
+	margin: 50px auto;
+	height: 400px;
+	position: relative;
+	
+}
+.sub_item {
+	width: 80%;
+	position: absolute;
+	right: 0;
+	border-top: 1px solid #000;
+	display: flex;
+	align-items: flex-start;
+	
+}
+.sub {
+width: 45%;
+margin-top: 30px;
+}
+.ss {
+	width: 10%;
+}
+.footer {
+	background-color: #777;
+	width: 100%;
+	position: relative;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+.foot_con {
+	width: 1000px;
+	margin: 0 auto;
+	height: 220px;
+	color: #fff;
+}
+.tab {
+	width: 33%;
+	height: 220px;
+	display: inline-block;
+}
+.fl, .mail, .pp {
+	color: #fff;
+	text-decoration: none;
+}
+.foot_link {
+	list-style: none;
+}
+.foot_nav {
+	padding-top: 40px;
 }
